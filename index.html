@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Last Village</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="game-container">
+  <canvas id="gameCanvas" width="1280" height="720"></canvas>
+
+  <div id="hud">
+    <div id="hp-panel">
+      <div id="hp-label">🛡️ Town Core</div>
+      <div id="hp-bar-bg"><div id="hp-bar-fill"></div></div>
+      <div id="hp-text">500 / 500</div>
+    </div>
+    <div id="stats-panel">
+      <div id="gold-text">🪙 Gold: 30</div>
+      <div id="timer-text">⏱️ 10:00</div>
+      <div id="weapon-text">⚔️ Weapon Lv 1</div>
+    </div>
+  </div>
+
+  <div id="hint-overlay">
+    <p>WASD move &middot; Mouse aim &middot; Click to shoot &middot; Click objects to build / upgrade / repair</p>
+  </div>
+
+  <div id="end-overlay" class="hidden">
+    <div id="end-panel">
+      <h1 id="end-title"></h1>
+      <p id="end-subtitle"></p>
+      <button id="reload-btn">Play Again</button>
+    </div>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
